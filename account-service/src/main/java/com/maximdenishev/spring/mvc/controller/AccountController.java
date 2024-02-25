@@ -2,7 +2,6 @@ package com.maximdenishev.spring.mvc.controller;
 
 import com.maximdenishev.spring.mvc.dto.AccountRequestDTO;
 import com.maximdenishev.spring.mvc.dto.AccountResponseDTO;
-import com.maximdenishev.spring.mvc.entity.Account;
 import com.maximdenishev.spring.mvc.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class AccountComtroller {
+public class AccountController {
     private final AccountService accountService;
 
     @Autowired
-    public AccountComtroller(AccountService accountService) {
+    public AccountController(AccountService accountService) {
         this.accountService = accountService;
     }
 
