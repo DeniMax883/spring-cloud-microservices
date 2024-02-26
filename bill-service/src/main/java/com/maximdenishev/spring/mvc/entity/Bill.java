@@ -26,8 +26,6 @@ public class Bill {
 
     private Long accountId;
     private BigDecimal amount;
-
-    @Column(name = "is_default")
     private Boolean isDefault;
     private OffsetDateTime creationDate;
     private Boolean overdraftEnabled;
