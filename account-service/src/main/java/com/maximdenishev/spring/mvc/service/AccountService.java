@@ -20,7 +20,7 @@ public class AccountService {
     }
 
     public Account getAccountById(Long id){
-       return accountRepository.findById(id).orElseThrow(()-> new AccountNotFoundException("Unable to found account with id"+ id));
+       return accountRepository.findById(id).orElseThrow(()-> new AccountNotFoundException("Unable to find account with id"+ id));
     }
 
     public Long createAccount(String name, String phone, String email, List<Long>bills){
